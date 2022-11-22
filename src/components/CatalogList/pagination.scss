@@ -1,0 +1,58 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px;
+  font-size: 12px;
+  gap: 5px;
+
+  @include mixins.onTablet {
+    font-size: 18px;
+    margin: 30px 25px;
+    grid-column: 1/13;
+  }
+
+  @media (max-width: 639px) {
+    grid-column: 1/6;
+    margin: 30px 0px;
+  }
+
+  @include mixins.onDesktop {
+    margin: 30px 50px;
+    font-size: 24px;
+    gap: 5px;
+    grid-column: 1/25;
+  }
+
+}
+
+.page-num {
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #c6c6c6;
+
+  &:hover {
+    background-color: #5AB1BB;
+    color: #f5f5f5;
+  }
+
+  @include mixins.onTablet {
+    padding: 4px 7px;
+  }
+
+  @include mixins.onDesktop {
+    padding: 8px 15px;
+  }
+}
+
+.active > a {
+  background-color: #5AB1BB;
+  color: #fff
+}
+
+.disabled {
+  color: #c4c4c4;
+}

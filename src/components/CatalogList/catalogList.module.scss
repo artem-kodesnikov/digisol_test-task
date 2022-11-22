@@ -1,0 +1,25 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.catalog {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(3, 185px);
+    justify-content: center;
+    grid-column: 4/12;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 180px);
+    grid-column: 2/13;
+  }
+  @media (max-width: 639px) {
+    grid-template-columns: repeat(2, 180px);
+    grid-column: 1/6;
+  }
+  @media (max-width: 488px) {
+    grid-template-columns: repeat(1, 200px);
+    grid-column: 1/7;
+  }
+}

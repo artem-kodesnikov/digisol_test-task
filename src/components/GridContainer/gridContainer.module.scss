@@ -1,0 +1,17 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 16px;
+  padding: 16px 16px;
+  box-sizing: border-box;
+
+  @include mixins.onTablet {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include mixins.onDesktop {
+    grid-template-columns: repeat(24, 1fr);
+  }
+}

@@ -1,0 +1,28 @@
+@mixin onTablet {
+  @media (min-width: 639px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1199px) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(../fonts/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 700;
+    src: local('Lato'), url(../fonts/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 900;
+    src: local('Lato'), url(../fonts/Lato-Black.ttf) format('truetype');
+}

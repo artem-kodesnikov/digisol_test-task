@@ -1,0 +1,10 @@
+@use "../../styles/mixins.scss" as mixins;
+
+.humburger {
+  position: fixed;
+  padding: 10px;
+
+  @include mixins.onTablet {
+    display: none;
+  }
+}

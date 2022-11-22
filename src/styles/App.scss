@@ -1,0 +1,14 @@
+@import url(./_reset.scss);
+@import url(./grid.scss);
+
+body {
+  font-family: 'Lato';
+  background-color: #F5F5F5;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}

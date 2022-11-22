@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 130px;
+  height: 30px;
+  background-color: #4797FF;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  bottom: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #006eff;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
