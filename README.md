@@ -1,4 +1,12 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Digisol test task
+- [DEMO LINK](https://artem-kodesnikov.github.io/digisol_test-task)
+
+Technologies used:
+- React.js 
+- Typescript 
+- CSS(SCSS)
+- Fully responsive layout was made by using CSS Grid and Flexbox
+# run project
+- clone the repo
+- npm install
+- npm start
