@@ -1,5 +1,5 @@
 # Digisol test task
-- [DEMO LINK](https://artem-kodesnikov.github.io/digisol_test-task)
+- [DEMO LINK](https://artem-kodesnikov.github.io/digisol_test-task/)
 
 Technologies used:
 - React.js 
